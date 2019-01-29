@@ -1,0 +1,37 @@
+
+@import "./vars.scss";
+
+html,body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 12px;
+  font-family: $font-bold;
+}
+
+// tabs
+.tab-wrapper {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  .tab-wrapper__header {
+    background-image: url("~assets/dice/record_unchoice.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    width: 136px;
+    min-width: 100px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 36px;
+    color: #009F36;
+  }
+  .is-active {
+    color: white;
+    background-image: url("~assets/dice/record_choice.png");
+    // background-color:  #5FCD00;
+  }
+}

@@ -1,0 +1,28 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "targets": {
+                    "browsers": [
+                        "ie >= 10",
+                        "last 3 Chrome versions",
+                        "last 3 Safari versions",
+                        "last 3 iOS versions"
+                    ]
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        [
+            "@babel/plugin-transform-runtime",
+            {
+                "corejs": false,
+                "helpers": false,
+                "regenerator": true,
+                "useESModules": false
+            }
+        ]
+    ]
+}
